@@ -2,7 +2,7 @@
 
 
 
-<html lang="en" class="h-full scroll-smooth">
+<html lang="zh" class="h-full scroll-smooth">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -55,7 +55,7 @@
         else if (darkQuery.addListener) darkQuery.addListener(followSystem);
     }
     // Preloader skip: the session collection must contain this page's font-bundle URL.
-    const fontsReadyToken = "https://fonts.googleapis.com/css2?family=Cardo:wght@400;700\u0026family=Yuji+Syuku\u0026family=Zen+Old+Mincho:wght@400;600\u0026family=Cormorant+Garamond:wght@400;600\u0026display=swap";
+    const fontsReadyToken = "https://fonts.googleapis.com/css2?family=Cardo:wght@400;700\u0026family=Yuji+Syuku\u0026family=Zen+Old+Mincho:wght@400;600\u0026family=Cormorant+Garamond:wght@400;600\u0026family=Noto+Serif+SC:wght@400;600\u0026display=swap";
     shiro.fontsReadyToken = fontsReadyToken;
     try {
         const storedFontsReady = sessionStorage.getItem('shiro:fonts-ready');
@@ -84,38 +84,44 @@
 
 
 
-<title>問花不語</title>
+<title>花間紅箋</title>
+
+
+<meta name="description" content="Jerry的博客" />
+
+
+<meta name="author" content="Jerry" />
 
 
 
-<meta name="author" content="John Doe" />
+<meta property="og:title" content="花間紅箋" />
 
+<meta property="og:description" content="Jerry的博客" />
 
-
-<meta property="og:title" content="問花不語" />
-
-<meta property="og:url" content="http://example.com/index.html" />
+<meta property="og:url" content="https://ahajerry.github.io/index.html" />
 <meta property="og:type" content="website" />
-<meta property="og:site_name" content="問花不語" />
+<meta property="og:site_name" content="花間紅箋" />
 
 
-<meta property="og:locale" content="en_US" />
+<meta property="og:locale" content="zh_CN" />
 
 
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="問花不語" />
+<meta name="twitter:title" content="花間紅箋" />
+
+<meta name="twitter:description" content="Jerry的博客" />
 
 
 
-<link rel="canonical" href="http://example.com/index.html" />
+<link rel="canonical" href="https://ahajerry.github.io/index.html" />
 
 
 
 
 
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebSite","name":"問花不語","url":"http://example.com"}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebSite","name":"花間紅箋","url":"https://ahajerry.github.io","description":"Jerry的博客"}]</script>
 
 
 
@@ -127,7 +133,7 @@
     
 
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Yuji+Syuku&family=Zen+Old+Mincho:wght@400;600&family=Cormorant+Garamond:wght@400;600&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Yuji+Syuku&family=Zen+Old+Mincho:wght@400;600&family=Cormorant+Garamond:wght@400;600&family=Noto+Serif+SC:wght@400;600&display=swap" />
 
 <link rel="stylesheet" href="/css/style.min.css?v=84edaf60">
 
@@ -184,7 +190,7 @@
             <div class="relative inline-block">
                 
                 <h1 class="site-title">
-                    <a href="/">問花不語</a>
+                    <a href="/">花間紅箋</a>
                 </h1>
                 
                 <!-- Seal: Mathematically Centered -->
@@ -198,7 +204,7 @@
         fill="var(--color-seal-fill)" filter="url(#seal-roughness)" opacity="0.92" />
     <text x="50" y="50" text-anchor="middle" dominant-baseline="central"
         font-size="42" fill="var(--color-on-seal)" filter="url(#text-erosion)"
-        class="seal-text select-none">問</text>
+        class="seal-text select-none">花</text>
 </svg>
 
                 </div>
@@ -206,7 +212,7 @@
             </div>
             
             <p class="site-subtitle">
-                Jerry的博客
+                紅箋小字，說盡平生意。
             </p>
             
             
@@ -375,7 +381,7 @@
 <article class="py-2">
     <header class="text-center mb-4">
         <h2 class="font-bold leading-snug text-text-heading text-[1.35rem] transition-colors hover:text-seal sm:text-[1.45rem] md:text-[1.6rem]">
-            <a href="/2026/08/18/hello-world/">Hello World</a>
+            <a href="/2026/08/18/%E6%9C%88%E4%BA%AE/">月亮</a>
         </h2>
         
 
@@ -402,15 +408,8 @@
     </header>
     
     <div class="prose-shiro">
-        <p>Welcome to Hexo ! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub ....</p>
-    </div>
-    
-    <div class="mt-6 text-center">
-        <a href="/2026/08/18/hello-world/"
-            class="focus-elegant btn-ink"
-            aria-label="Read More: Hello World">
-            Read More
-        </a>
+        <p>小时不识月，呼作地卫一</p>
+
     </div>
     
 </article>
@@ -427,7 +426,7 @@
 
             <footer class="section-divider site-footer" data-pagefind-ignore>
     <div class="site-footer-meta text-center text-sm text-text-chrome leading-relaxed">
-        <p>&copy; <span class="oldstyle-nums">2026</span> 問花不語</p>
+        <p>&copy; <span class="oldstyle-nums">2026</span> 花間紅箋</p>
         <p class="font-eng text-footnote tracking-wide opacity-90">Elegant theme by <a href="https://github.com/Acris/hexo-theme-shiro" target="_blank" rel="noopener noreferrer" class="link-chrome">Shiro</a> · Made by <a href="https://acris.me" target="_blank" rel="noopener noreferrer" class="link-chrome">Acris</a>
                         with <span aria-label="love" title="love">❤️</span></p>
     </div>
