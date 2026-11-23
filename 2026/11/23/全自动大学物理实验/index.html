@@ -82,6 +82,24 @@
 
     
 
+<!-- MathJax pages: configure and enqueue the deferred engine after first-paint-critical
+     theme/font hints, while still before blocking stylesheets can delay discovery. -->
+<script data-cfasync="false">
+    window.MathJax = {
+        loader: {
+            load: ['ui/no-dark-mode']
+        },
+        tex: {
+            
+            processEscapes: true,
+            processEnvironments: true,
+            tags: "none"
+        }
+    };
+</script>
+<script defer data-cfasync="false" src="https://cdn.jsdelivr.net/npm/mathjax@4.1.3/tex-chtml.js"></script>
+
+
     
 
 
@@ -113,9 +131,9 @@
 <meta property="og:locale" content="zh_CN" />
 
 
-<meta property="og:image" content="https://ahajerry.github.io/image.png" />
+<meta property="og:image" content="https://ahajerry.github.io/image/phyExpReport/image.png" />
 
-<meta property="og:image:alt" content="alt text" />
+<meta property="og:image:alt" content="首页" />
 
 
 
@@ -128,7 +146,7 @@
 <meta property="article:published_time" content="2026-11-23T10:38:08.000Z" />
 
 
-<meta property="article:modified_time" content="2026-11-23T11:52:32.488Z" />
+<meta property="article:modified_time" content="2026-11-23T12:13:42.064Z" />
 
 
 
@@ -139,9 +157,9 @@
 <meta name="twitter:description" content="“全自动大物实验”网站起源于一次青涩的尝试：能不能用把实验报告中复杂的不确定度计算封装成简单易用的GUI页面？在ChatGPT的指导下，我磕磕绊绊地用React实现了计算模块的原型。后来我发现，很多人都在被手搓实验报告所困扰，一个想法萌发出来———或许可以增加自动生成报告的功能、然后提供给大家使用。之后的代码几乎完全由vibe..." />
 
 
-<meta name="twitter:image" content="https://ahajerry.github.io/image.png" />
+<meta name="twitter:image" content="https://ahajerry.github.io/image/phyExpReport/image.png" />
 
-<meta name="twitter:image:alt" content="alt text" />
+<meta name="twitter:image:alt" content="首页" />
 
 
 
@@ -151,7 +169,7 @@
 
 
 
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"BlogPosting","headline":"全自动大学物理实验","mainEntityOfPage":{"@type":"WebPage","@id":"https://ahajerry.github.io/2026/11/23/%E5%85%A8%E8%87%AA%E5%8A%A8%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C/"},"description":"“全自动大物实验”网站起源于一次青涩的尝试：能不能用把实验报告中复杂的不确定度计算封装成简单易用的GUI页面？在ChatGPT的指导下，我磕磕绊绊地用React实现了计算模块的原型。后来我发现，很多人都在被手搓实验报告所困扰，一个想法萌发出来———或许可以增加自动生成报告的功能、然后提供给大家使用。之后的代码几乎完全由vibe...","image":["https://ahajerry.github.io/image.png"],"datePublished":"2026-11-23T10:38:08.000Z","dateModified":"2026-11-23T11:52:32.488Z","author":{"@type":"Person","name":"Jerry"},"publisher":{"@type":"Organization","name":"花間紅箋","logo":{"@type":"ImageObject","url":"https://ahajerry.github.io/favicon.svg","width":112,"height":112}}}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"BlogPosting","headline":"全自动大学物理实验","mainEntityOfPage":{"@type":"WebPage","@id":"https://ahajerry.github.io/2026/11/23/%E5%85%A8%E8%87%AA%E5%8A%A8%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C/"},"description":"“全自动大物实验”网站起源于一次青涩的尝试：能不能用把实验报告中复杂的不确定度计算封装成简单易用的GUI页面？在ChatGPT的指导下，我磕磕绊绊地用React实现了计算模块的原型。后来我发现，很多人都在被手搓实验报告所困扰，一个想法萌发出来———或许可以增加自动生成报告的功能、然后提供给大家使用。之后的代码几乎完全由vibe...","image":["https://ahajerry.github.io/image/phyExpReport/image.png"],"datePublished":"2026-11-23T10:38:08.000Z","dateModified":"2026-11-23T12:13:42.064Z","author":{"@type":"Person","name":"Jerry"},"publisher":{"@type":"Organization","name":"花間紅箋","logo":{"@type":"ImageObject","url":"https://ahajerry.github.io/favicon.svg","width":112,"height":112}}}]</script>
 
 
 
@@ -443,6 +461,30 @@
         <a href="/archives/2026/" class="oldstyle-nums link-chrome"><time datetime="2026-11-23">2026/11/23</time></a>
     </div>
     
+        <span class="select-none text-text-faint" aria-hidden="true">•</span>
+        <div class="flex items-center gap-1.5">
+            
+<svg class="size-4 text-text-subtle shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+</svg>
+
+            
+                
+                
+                <span class="flex flex-wrap items-center gap-x-1.5 gap-y-0.5" role="list">
+                    
+                    <span class="inline-flex items-center gap-1.5" role="listitem">
+                        
+                        
+                        <a class="link-chrome" href="/categories/%E9%A1%B9%E7%9B%AE/" title="项目">项目</a>
+                        
+                        
+                    </span>
+                    
+                </span>
+            
+        </div>
+    
     
 </div>
 
@@ -486,7 +528,7 @@
     
 
     <div class="prose-shiro" data-pagefind-body>
-        <p>“全自动大物实验”网站起源于一次青涩的尝试：能不能用把实验报告中复杂的不确定度计算封装成简单易用的GUI页面？在ChatGPT的指导下，我磕磕绊绊地用React实现了计算模块的原型。后来我发现，很多人都在被手搓实验报告所困扰，一个想法萌发出来———或许可以增加自动生成报告的功能、然后提供给大家使用。之后的代码几乎完全由vibe coding生成，并且在别的伙伴的贡献下，我们的功能越来越完善。很高兴看到，网站的用户越来越多，帮到了更多的人。<br>或许ai agent完全可以完成相同的任务，但是复用现有模板可以保证快速、稳定地产出高分报告，所以这个项目仍有一些意义在吧。<br><img src="/image.png" alt="alt text" decoding="async" width="3000" height="1617" loading="eager">  </p>
+        <p>“全自动大物实验”网站起源于一次青涩的尝试：能不能用把实验报告中复杂的不确定度计算封装成简单易用的GUI页面？在ChatGPT的指导下，我磕磕绊绊地用React实现了计算模块的原型。后来我发现，很多人都在被手搓实验报告所困扰，一个想法萌发出来———或许可以增加自动生成报告的功能、然后提供给大家使用。之后的代码几乎完全由vibe coding生成，并且在别的伙伴的贡献下，我们的功能越来越完善。很高兴看到，网站的用户越来越多，帮到了更多的人。<br>或许ai agent完全可以完成相同的任务，但是复用现有模板可以保证快速、稳定地产出高分报告，所以这个项目仍有一些意义在吧。<br><img src="/image/phyExpReport/image.png" alt="首页" decoding="async" width="3000" height="1617" loading="eager">  </p>
 <h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><p>网址：<a target="_blank" rel="noopener" href="https://lab.tongji.sh/">https://lab.tongji.sh</a><br>项目前端读取数据，后端自动计算不确定度、画图、填入模板并生成.pdf格式的报告。资料页面还收集了课程安排、评分细则、常用平台等信息。  </p>
 <ul>
 <li>前端:React,shadcn&#x2F;ui,Tailwind CSS,vite</li>
@@ -496,9 +538,11 @@
 <p>网站使用cookie识别用户，同一cookie可以下载之前的报告。<br>此外，还有DSH skill版本可以调用上述网址的MCP server从而使用。<br>项目源码已经于<a target="_blank" rel="noopener" href="https://github.com/ahajerry/tj-phyExpReport">Github</a>开源。</p>
 <pre><code class="language-bash">git clone https://github.com/ahajerry/tj-phyExpReport
 </code></pre>
-<h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><p><strong>数据读入</strong><br><img src="/image-1.png" alt="alt text" decoding="async" loading="lazy" width="2195" height="1078"><br><img src="/image-2.png" alt="alt text" decoding="async" loading="lazy" width="2175" height="595"><br>支持手动输入数据、上传.xlsx或.csv格式的原始数据（具体支持情况根据学校实验平台的不同实验输出情况而定）、传入json格式的数据。<br>其中，json格式主要是为了ai识别读数设计。可以把数据单图片传给ai，使用给出的提示词，让ai识别文字并输出报告所需要的数字。  </p>
-<p><strong>科学计算</strong><br><img src="/image-4.png" alt="alt text" decoding="async" loading="lazy" width="1980" height="1495"><br>自动完成不确定度计算。<br>$$<br>u_c(y)&#x3D;\sqrt{\sum_{i&#x3D;1}^{N}\left(\frac{\partial f}{\partial x_i}\right)^2 u^2(x_i)}<br>$$<br>对于A类不确定度的计算以及各物理量的不确定度传递，一直是完成报告时最繁琐的部分。现在，使用本项目点击一下即可完成计算————可以完全在手机上进行以至于在实验课下课前就能把计算结果誊抄到数据单上。</p>
-<p><strong>作图</strong><br><img src="/image-3.png" alt="alt text" decoding="async" loading="lazy" width="1285" height="735"><br>调用typst的作图模块（在之前的版本中，通过latex tikz包实现），绘制数据点并进行拟合。对于手搓而言，无论是用纸笔作图还是手写代码生成都尤为繁琐，而使用ai agent绘图需要下载matplotlib等包，或许也有一些复杂。  </p>
+<h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><p><strong>数据读入</strong><br><img src="/image/phyExpReport/image-1.png" alt="读取数据" decoding="async" loading="lazy" width="2195" height="1078"><br><img src="/image/phyExpReport/image-2.png" alt="读取数据" decoding="async" loading="lazy" width="2175" height="595"><br>支持手动输入数据、上传.xlsx或.csv格式的原始数据（具体支持情况根据学校实验平台的不同实验输出情况而定）、传入json格式的数据。<br>其中，json格式主要是为了ai识别读数设计。可以把数据单图片传给ai，使用给出的提示词，让ai识别文字并输出报告所需要的数字。  </p>
+<p><strong>科学计算</strong><br><img src="/image/phyExpReport/image-4.png" alt="计算" decoding="async" loading="lazy" width="1980" height="1495"><br>自动完成不确定度计算。<br>$$
+u_c(y)=\sqrt{\sum_{i=1}^{N}\left(\frac{\partial f}{\partial x_i}\right)^2 u^2(x_i)}
+$$<br>对于A类不确定度的计算以及各物理量的不确定度传递，一直是完成报告时最繁琐的部分。现在，使用本项目点击一下即可完成计算————可以完全在手机上进行以至于在实验课下课前就能把计算结果誊抄到数据单上。</p>
+<p><strong>作图</strong><br><img src="/image/phyExpReport/image-3.png" alt="作图" decoding="async" loading="lazy" width="1285" height="735"><br>调用typst的作图模块（在之前的版本中，通过latex tikz包实现），绘制数据点并进行拟合。对于手搓而言，无论是用纸笔作图还是手写代码生成都尤为繁琐，而使用ai agent绘图需要下载matplotlib等包，或许也有一些复杂。  </p>
 <p><strong>填充细节</strong><br>模板中内置了从实验课本和学习通上摘录的文字资料以及截图。支持在生成报告的末尾插入原始数据图片。  </p>
 <h2 id="更多…"><a href="#更多…" class="headerlink" title="更多…"></a>更多…</h2><p>我身边的一些认真学习的同学手搓报告一周会花掉至少2~3个小时。作为一门1学分的“水课”——并且教学和课程设计极其不成体系——我不认为它应当占用这么多时间。希望这个项目可以帮到更多的人。<br>anyway,免责声明：使用本网站仍旧意味着你要对自己的作业负责，同时本项目并不支持数据抄袭的行为。<br>我们（开发者）承诺守护好用户的隐私信息。实验数据经过匿名化处理后可能用于改进项目或其他用途。<br>感谢ai时代让一个想法的落地变得如此容易，也感谢支持这个项目的大家！<br>更多信息，还请移步<a target="_blank" rel="noopener" href="https://lab.tongji.sh/">https://lab.tongji.sh</a>  </p>
 
